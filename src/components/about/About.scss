@@ -1,0 +1,43 @@
+.outro {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  
+    h4 {
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+  
+    span {
+      color: $orange;
+      text-transform: uppercase;
+    }
+  
+    p {
+      color: $grey;
+    }
+  
+    .text {
+      padding: 0 40px 0 40px;
+    }
+  
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  // media
+  @media (min-width: 1000px) {
+    .outro {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 30px;
+      gap: 40px;
+    }
+  }
+  

@@ -1,0 +1,161 @@
+
+$white: #fff;
+$grey: #8e8e8e;
+$black: #272727;
+$brown: #633d3d;
+$white2: #fafafa;
+$orange: #d87d4a;
+$black2: #191919;
+$lightGrey: #f1f1f1;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+
+.backgroundOpacity {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0.650);
+}
+
+button {
+  max-width: 200px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  &:hover{
+    filter: brightness(105%);
+  }
+}
+
+.btn-style1 {
+  color: $white;
+  background-color: #d87d4a;
+}
+
+.btn-style2 {
+  background-color: $black2;
+  color: $white;
+}
+
+.btn-style2 {
+  background-color: $lightGrey;
+  color: $black;
+}
+
+.border-box {
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+main {
+  margin: auto;
+  width: 84%;
+  max-width: 1100px;
+}
+
+.orange{
+  color: $orange;
+}
+
+.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+// media
+
+@media (min-width: 600px) {
+    main {
+    margin-top: 80px;
+    width: 95%;
+  }
+  .mobile {
+    display: none !important;
+  }
+
+  .tablet {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important ;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important ;
+  }
+
+  .tablet {
+    display: none !important;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+}

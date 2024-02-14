@@ -1,0 +1,153 @@
+.page-product {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  
+    .feature{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .go-back{
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  
+    .new-product{
+      color: $orange;
+    }
+  
+    .quantity-item{
+      color: $orange;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  
+    .alert-item-added-to-cart {
+      position: fixed;
+      top: 40px;
+      left: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(64, 140, 64);
+    }
+  
+    .presentation-product {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      * {
+        max-width: 100%;
+      }
+  
+      .txt-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  
+    .selector-quantity-and-add-to-cart {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      .selector-quantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $lightGrey;
+  
+        button {
+          width: 40%;
+          height: 100%;
+        }
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+  
+  .feature-and-in-the-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+    .in-the-box {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  
+      ul {
+        display: flex;
+        gap: 20px;
+      }
+  
+      h2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  
+  
+  // media
+  
+  @media (min-width: 600px) {
+    .page-product {
+      .in-the-box {
+        display: flex;
+        flex-direction: row;
+        gap: 155px;
+  
+        ul {
+          display: flex;
+          gap: 20px;
+        }
+  
+        h2 {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .page-product {
+      .presentation-product {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+      }
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .page-product {
+      .in-the-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+  
+      .feature {
+        width: 50%;
+      }
+    }
+    
+    .feature-and-in-the-box {
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+    }
+  }

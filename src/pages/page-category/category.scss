@@ -1,0 +1,9 @@
+.main-category {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+  
+// categories
+@import 'category-intro/intro-category';
+@import 'category-products/category-products';

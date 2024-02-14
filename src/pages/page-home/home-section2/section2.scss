@@ -1,0 +1,52 @@
+.product-home2 {
+    img {
+      width: 100%;
+      z-index: -2;
+    }
+  
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    z-index: 1;
+    background-color: $lightGrey;
+  
+    .txt {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 4;
+      top: 80px;
+      left: 40px;
+    }
+  
+    button {
+      width: 200px;
+      padding: 15px 30px;
+      color: $black;
+      text-transform: uppercase;
+      border: 1px solid $black;
+      background-color: $lightGrey;
+    }
+  }
+  
+  
+  
+  // media
+  
+  @media (min-width: 600px) {
+    .product-home2 {
+      position: relative;
+      margin-top: 30px;
+      background-color: $lightGrey;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .product-home2 {
+      position: relative;
+      margin-top: 30px;
+      background-color: $lightGrey;
+    }
+  }
+  

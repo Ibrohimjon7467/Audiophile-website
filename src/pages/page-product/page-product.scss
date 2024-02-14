@@ -1,0 +1,10 @@
+.main-product {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  
+// products
+@import "./product-presentation/presentation-product";
+@import "./product-mayAlsoLike/product-may-also-like";
+@import "./product-gallery/product-gallery";

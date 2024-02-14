@@ -1,0 +1,105 @@
+.intro {
+    position: relative;
+    z-index: 1;
+    background-color: $black2;
+  
+    .container-intro {
+      max-width: 1120px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 100px 40px 400px 40px;
+      background: url(../../public/assets/images/home/mobile/image-header.jpg) no-repeat !important;
+      background-size: 100% !important;
+  
+      .txt {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+  
+      .new-product {
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+      }
+  
+      h1 {
+        color: white;
+      }
+  
+      p {
+        color: white;
+      }
+  
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  
+  
+  // media
+  
+  @media (min-width: 600px) {
+    .intro {
+      .container-intro {
+        margin-bottom: 30px;
+        padding: 150px 40px 400px 40px !important;
+        background: url(../../public/assets/images/home/tablet/image-header.jpg) no-repeat !important;
+        background-size: 100% !important;
+      }
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .intro {
+      .container-intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 250px 40px 140px 30px !important;
+        background: url(../../public/assets/images/home/desktop/image-hero.jpg) no-repeat !important;
+        background-size: 100% !important;
+  
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -5;
+          background-color: #191919;
+        }
+  
+        .txt {
+          text-align: left;
+          gap: 25px;
+          width: 500px;
+        }
+  
+        button {
+          margin-left: 0;
+          margin-right: 0;
+        }
+  
+        h1,
+        p {
+          color: white;
+        }
+  
+        .new-product {
+          color: gray;
+          letter-spacing: 8px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,145 @@
+footer {
+    background-color: $black;
+    position: relative;
+    z-index: 1;
+  
+    .footer-container {
+      position: relative;
+      max-width: 1120px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+      margin: auto;
+      padding: 80px 30px;
+  
+      &::before {
+        position: absolute;
+        content: "";
+        width: 130px;
+        height: 4px;
+        top: 0;
+        left: 50%;
+        transition: 0.5s;
+        transform: translateX(-50%);
+        background-color: $orange;
+      }
+  
+      .title-and-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+  
+      .link {
+        color: $white;
+      }
+  
+      .copy-and-social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        .social-links {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+        }
+        img {
+          width: 20px;
+        }
+      }
+  
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+  
+        li {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: 0.3s;
+  
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+  
+      .copyright {
+        color: $grey;
+      }
+  
+      .brand {
+        font-size: 25px;
+        font-weight: bolder;
+        color: $white;
+      }
+      
+      p {
+        color: $grey;
+        max-width: 500px;
+      }
+    }
+  }
+  
+  .nav-active {
+    color: $orange !important;
+  }
+  
+  
+  
+  // media
+  
+  @media (min-width: 600px) {
+    ul {
+      flex-direction: row !important;
+      gap: 40px !important;
+    }
+  
+    .footer-container {
+      text-align: left !important;
+      gap: 40px;
+  
+      &::before {
+        width: 130px;
+        height: 4px;
+        top: 0;
+        left: 30px;
+        transform: translateX(0);
+      }
+  
+      .copy-and-social-links {
+        flex-direction: row !important;
+        justify-content: space-between;
+        gap: 20px;
+  
+        img {
+          width: 20px;
+          height: 20px;
+        }
+  
+        .social-links {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .footer-container {
+      text-align: left !important;
+      gap: 40px;
+      padding: 50px;
+  
+      .title-and-links {
+        flex-direction: row !important;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
+  }
+  

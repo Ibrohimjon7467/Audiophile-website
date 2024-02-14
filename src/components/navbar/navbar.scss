@@ -1,0 +1,126 @@
+header {
+    z-index: 3;
+    background-color: $black2;
+  
+    .link{
+      color: $white;
+    }
+  
+    .icon-nav-mobile {
+      z-index: 3;
+    }
+  
+    .nav-mobile {
+      position: absolute;
+      width: 100vw;
+      z-index: 3;
+      margin: auto;
+      padding: 70px 30px 30px 30px;
+      transform: translateY(-250%);
+      animation: animTranslate 1s forwards;
+      background-color: $white;
+    }
+  
+    nav {
+      width: 90%;
+      max-width: 1120px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      padding: 15px 25px;
+      z-index: 3;
+      background-color: $black2;
+      border-bottom: 1px solid gray;
+  
+      .nav-cart {
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+  
+        .nav-quantity-item-cart {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          border-radius: 50%;
+          color: $white;
+          background-color: $orange;
+          transform: translate(-50%, -50%);
+        }
+        
+      }
+  
+      .brand {
+        position: relative;
+        font-size: 30px;
+        font-weight: bolder;
+        z-index: 3;
+        color: $white;
+        transition: 0.3s;
+      }
+  
+      img {
+        width: 25px;
+      }
+    }
+  }
+  
+  .nav-active{
+    color: $orange !important;
+  }
+  
+  
+  // animation
+  @keyframes animTranslate {
+    to{
+      transform: translate(0);
+    }
+  }
+  
+  
+  // media
+  
+  @media (min-width: 600px) {
+    nav {
+      .brand {
+        margin-right: 250px;
+      }
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    header {
+      nav {
+        .brand {
+          margin-right: 0;
+        }
+  
+        .icon-nav-mobile {
+          display: none;
+        }
+  
+        li {
+          font-weight: 500;
+          transition: 0.3s;
+          text-transform: uppercase;
+          &:hover {
+            color: $orange;
+          }
+        }
+  
+        .nav-desktop {
+          display: flex !important;
+          align-items: center;
+          gap: 25px;
+          z-index: 11;
+        }
+      }
+    }
+  }

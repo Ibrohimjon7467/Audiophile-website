@@ -1,0 +1,16 @@
+@import './general';
+
+// components
+@import '../components/navbar/Navbar';
+@import '../components/footer/footer';
+@import '../components/about/about';
+@import '../components/categories/categories';
+@import '../components/cart/cart';
+@import '../components//cartValided/cart-valided';
+
+
+// pages
+@import '../pages/page-home/home';
+@import '../pages/page-category/category';
+@import '../pages/page-product/page-product';
+@import '../pages/page-form/form';
