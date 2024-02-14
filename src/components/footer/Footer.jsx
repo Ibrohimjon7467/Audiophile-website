@@ -28,7 +28,7 @@ function Footer() {
           demo facility - we're open 7 days a week.
         </p>
         <div className="copy-and-social-links">
-          <span className="copyright">Copyright 2021.</span>
+          <span className="copyright">Copyright 2021. All Rights Reserved</span>
           <div className="social-links">
             <img src="../../../assets/icons/icon-facebook.svg" alt="image" />
             <img src="../../../assets/icons/icon-twitter.svg" alt="image" />
